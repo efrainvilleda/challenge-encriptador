@@ -5,26 +5,33 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/style.css">
         <script src="script/script.js"></script>
         <title>Challenge ONE | Encriptador</title>
     </head>
 
     <body>
         <header>
-            <img src="images/logo.png" alt="Logo de Alura" class="logo">
+            <img class="logo" src="./images/logo.png" alt="Logo de Alura">
             <h2 class="titulo-principal">Encriptador - Desencriptador</h2>
         </header>
 
         <main>
             <section>
-                <textarea name="" id="" cols="30" rows="10" class="text-area" placeholder="Ingresa el texto"></textarea>
-                <button class="encriptar" onclick="encriptar()">Encriptar</button>
-                <button class="desencriptar" onclick="desencriptar()">Desencriptar</button>
+                <textarea class="mensaje" id="" placeholder="Ingresa el texto" autofocus></textarea>
+                <div class="botones">
+                    <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+                </div>
+                
             </section>
 
             <section>
-                <textarea name="" id="" cols="30" rows="10" class="mensaje"></textarea>
-                <button class="copiar">Copiar</button>
+                <textarea class="resultado" id="" placeholder="Mensaje" readonly></textarea>
+                <div class="botones">
+                    <button class="btn-copiar" onclick="copiar()">Copiar</button>
+                </div>
             </section>
         </main>
 

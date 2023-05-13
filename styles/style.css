@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+
+header{
+    background: rgb(150, 224, 241);
+    display: flex;
+}
+
+.logo{
+    width: 10em;
+    margin: 1em 0;
+}
+
+.titulo-principal{
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+    margin: 2em auto;
+}
+
+main{
+    background: #FFFFFF;
+    padding: 1em;
+    display: flex;
+}
+
+section{
+    margin: auto;
+    display: inline-block;
+}
+
+textarea{
+    border: 1px black solid;
+    border-radius: 20px;
+    outline: none;
+    font-family: 'Exo', sans-serif;
+    font-size: 14px;
+    padding: 1em;
+}
+
+.mensaje{
+    width: 30em;
+    height: 11em;
+}
+
+.resultado{
+    width: 30em;
+    height: 22em;
+}
+
+.botones{
+    margin: 1em 0;
+    display: flex;
+}
+
+button{
+    width: 7em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    margin: auto;
+}
+
+.btn-encriptar{
+    background: orange;
+}
+
+.btn-encriptar:hover{
+    background: darkorange;
+}
+
+.btn-desencriptar{
+    background: goldenrod;
+}
+
+.btn-desencriptar:hover{
+    background: darkgoldenrod;
+}
+
+.btn-copiar{
+    background: cyan;
+}
+
+.btn-copiar:hover{
+    background: darkcyan;
+}
+
+footer{
+    background: rgb(160, 133, 133);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.listaContacto{
+    display: inline-flex;
+}
+
+.enlace{
+    font-family: 'Almarai', sans-serif;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    margin: 1em;
+}
+
+.enlace:hover{
+    color: blue;
+}
+
+.copyright{
+    font-size: 13px;
+    margin: 1em;
+}

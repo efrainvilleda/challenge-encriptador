@@ -1,6 +1,6 @@
 function encriptar()
 {
-    let mensajeOriginal = document.querySelector(".text-area").value;
+    let mensajeOriginal = document.querySelector(".mensaje").value;
 
     let textoEncriptado = "";
 
@@ -28,13 +28,13 @@ function encriptar()
         }
     }
 
-    document.querySelector(".text-area").value = "";
-    document.querySelector(".mensaje").value = textoEncriptado;
+    document.querySelector(".mensaje").value = "";
+    document.querySelector(".resultado").value = textoEncriptado;
 }
 
 function desencriptar()
 {
-    let mensajeOriginal = document.querySelector(".text-area").value;
+    let mensajeOriginal = document.querySelector(".mensaje").value;
 
     let textoDesencriptado = "";
 
@@ -128,6 +128,6 @@ function desencriptar()
         }
     }
 
-    document.querySelector(".text-area").value = "";
-    document.querySelector(".mensaje").value = textoDesencriptado;
+    document.querySelector(".mensaje").value = "";
+    document.querySelector(".resultado").value = textoDesencriptado;
 }
