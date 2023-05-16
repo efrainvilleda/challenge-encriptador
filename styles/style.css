@@ -36,6 +36,7 @@ textarea{
     font-family: 'Exo', sans-serif;
     font-size: 14px;
     padding: 1em;
+    resize: none;
 }
 
 .mensaje{
