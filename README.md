@@ -1,12 +1,12 @@
-<em> # Challenge ONE | Lógica de Programación | Encriptador de texto </em>
+# Challenge ONE | Lógica de Programación | Encriptador de texto
 
 ## Bienvenidos al Proyecto Encriptador de texto
 
-<br><br>
+<br>
 
 ### Link a la página web
 
-<a href="https://efrainvilleda.github.io/challenge-encriptador/">Página Web</a>
+<a href="https://efrainvilleda.github.io/challenge-encriptador/">Challenge ONE | Lógica de Programación | Encriptador de texto</a>
 
 <br>
 
@@ -38,15 +38,47 @@ Este proyecto consiste en crear una página web con HTML5, CSS3 y JavaScript con
 <li>Al dar click al botón copiar, se mostrará un mensaje en la pnatalla de que el texto fue copiado, y limpiara la salida</li>
 <li>Adaptada a dispositivos moviles</li>
 
-Proyecto en desarrollo
+<br>
 
-v2.0 - Diseño responsive
-    Creando diseño responsive para dispositivos moviles
+### Etapas del proyecto
 
-v1.1 - Agregando diseño
-    Creado el layout de la página web
-    Cambiando la fuente de la página web
+#### Proyecto en desarrollo
 
-v1.0 - Primera versión
-    Función para encriptar y desencriptar creadas
-    Estructura básica del archivo html creada
+<br>
+
+#### Versiones lanzadas
+
+<br>
+
+<li>v2.0</li>
+<ul>
+    <li>Creando diseño responsive para dispositivos moviles</li> 
+</ul>
+<li>v1.1</li>
+<ul>
+    <li>Creado el layout de la página web</li> 
+    <li>Cambiando la fuente de la página web</li>
+</ul>
+<li>v1.0</li>
+<ul>
+    <li>Función para encriptar y desencriptar creadas</li> 
+    <li>Estructura básica del archivo html creada</li>
+</ul>
+
+<br>
+
+#### Proximos cambios
+
+<li>Agregar la funcionalidad en el botón de copiar</li>
+<li>Hacer que el mensaje unicamente sea en minpusculas</li>
+<li>Hacer que el mensaje no contenga simbolos especiales o letras con acentos</li>
+<li>Optimizar las funciones en JavaScript para hacerlas más simples</li>
+
+<br>
+
+### Redes
+
+Conecta conmigo en las siguientes redes.
+<p><a class="enlace" href="https://www.linkedin.com/in/efrain-villeda-ibarra/">LinkedIn</a></p>
+<p><a class="enlace" href="https://github.com/efrainvilleda">GitHub</a></p>
+<p><a class="enlace" href="https://app.aluracursos.com/user/efrain-villeda29">Alura</a></p>
