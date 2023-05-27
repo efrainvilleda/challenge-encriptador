@@ -79,28 +79,6 @@ button{
     background: darkcyan;
 }
 
-footer{
-    background: rgb(160, 133, 133);
-    text-align: center;
-    padding: 1em 0;
-}
-
-.listaContacto{
-    display: inline-flex;
-}
-
-.enlace{
-    font-family: 'Almarai', sans-serif;
-    font-size: 18px;
-    color: black;
-    text-decoration: none;
-    margin: 1em;
-}
-
-.enlace:hover{
-    color: blue;
-}
-
 #toast{
     visibility: hidden;
     min-width: 250px;
@@ -146,6 +124,25 @@ footer{
     to {opacity: 0;}
 }
 
+footer{
+    background: rgb(160, 133, 133);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.listaContacto{
+    display: inline-flex;
+}
+
+.enlace{
+    width: 30px;
+    margin: auto 1em;
+}
+
+#enlaceAlura{
+    width: 20px;
+}
+
 .copyright{
     font-size: 13px;
     margin: 1em;
@@ -154,7 +151,7 @@ footer{
 /* Viewport para dispositivos moviles */
 @media screen and (max-width:480px)
 {
-    header, main, section, .botones, footer, .listaContacto{
+    header, main, section, .botones, footer{
         width: auto;
         display: block;
         text-align: center;

@@ -50,6 +50,10 @@ Este proyecto consiste en crear una página web con HTML5, CSS3 y JavaScript con
 
 <br>
 
+<li>v3.3</li>
+<ul>
+    <li>Cambiando los enlaces de redes sociales por imagenes</li> 
+</ul>
 <li>v3.2</li>
 <ul>
     <li>Cambiando las funciones de encriptar y desencriptar usando replaceAll y includes</li> 
@@ -91,6 +95,6 @@ Este proyecto consiste en crear una página web con HTML5, CSS3 y JavaScript con
 ### Redes
 
 Conecta conmigo en las siguientes redes.
-<p><a class="enlace" href="https://www.linkedin.com/in/efrain-villeda-ibarra/">LinkedIn</a></p>
-<p><a class="enlace" href="https://github.com/efrainvilleda">GitHub</a></p>
-<p><a class="enlace" href="https://app.aluracursos.com/user/efrain-villeda29">Alura</a></p>
+<p><a class="enlace" href="https://www.linkedin.com/in/efrain-villeda-ibarra/"><img width="30px" src="./images/linkedin.png" alt="LinkedIn"></a></p>
+<p><a class="enlace" href="https://github.com/efrainvilleda"><img width="30px" src="./images/github.png" alt="GitHub"></a></p>
+<p><a class="enlace" href="https://app.aluracursos.com/user/efrain-villeda29"><img width="20px" src="./images/alura.png" alt="Alura"></a></p>
