@@ -135,6 +135,7 @@ function desencriptar()
 function copiarMensaje()
 {
     let texto = document.querySelector(".resultado");
+    let toast = document.getElementById("toast");
 
     texto.select();
     texto.setSelectionRange(0, 99999);
@@ -142,4 +143,10 @@ function copiarMensaje()
     navigator.clipboard.writeText(texto.value);
 
     texto.value = "";
+
+    toast.className = "show";
+
+    setTimeout(function(){
+        toast.className = toast.className.replace("show", "");
+    }, 3000);
 }

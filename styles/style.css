@@ -63,20 +63,12 @@ button{
     margin: auto;
 }
 
-.btn-encriptar{
+.btn-encriptar, .btn-desencriptar{
     background: orange;
 }
 
-.btn-encriptar:hover{
+.btn-encriptar:hover, .btn-desencriptar:hover{
     background: darkorange;
-}
-
-.btn-desencriptar{
-    background: goldenrod;
-}
-
-.btn-desencriptar:hover{
-    background: darkgoldenrod;
 }
 
 .btn-copiar{
@@ -109,8 +101,8 @@ footer{
     color: blue;
 }
 
-.toast{
-    /*visibility: hidden;*/
+#toast{
+    visibility: hidden;
     font-size: 1.2em;
     font-weight: bold;
     min-width: 250px;
@@ -123,6 +115,32 @@ footer{
     z-index: 1;
     left: 75%;
     top: 10%;
+}
+
+#toast.show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein{
+    from {top: 0; opacity: 0;}
+    to {top: 10%; opacity: 1;}
+}
+
+@keyframes fadein{
+    from {top: 0; opacity: 0;}
+    to {top: 10%; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout{
+    from {top: 10%; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout{
+    from {top: 10%; opacity: 1;}
+    to {top: 0; opacity: 0;}
 }
 
 .copyright{
@@ -162,10 +180,30 @@ footer{
         margin: 0 1em;
     }
 
-    .toast{
+    #toast{
         font-size: 0.8em;
         min-width: 100px;
         left: 50%;
         top: 14%;
+    }
+
+    @-webkit-keyframes fadein{
+        from {top: 0; opacity: 0;}
+        to {top: 14%; opacity: 1;}
+    }
+    
+    @keyframes fadein{
+        from {top: 0; opacity: 0;}
+        to {top: 14%; opacity: 1;}
+    }
+    
+    @-webkit-keyframes fadeout{
+        from {top: 14%; opacity: 1;}
+        to {top: 0; opacity: 0;}
+    }
+    
+    @keyframes fadeout{
+        from {top: 14%; opacity: 1;}
+        to {top: 0; opacity: 0;}
     }
 }
