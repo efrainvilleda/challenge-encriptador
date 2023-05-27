@@ -50,6 +50,10 @@ Este proyecto consiste en crear una página web con HTML5, CSS3 y JavaScript con
 
 <br>
 
+<li>v3.1</li>
+<ul>
+    <li>Modificando el toast para que aparezca con distintos avisos</li> 
+</ul>
 <li>v3.0</li>
 <ul>
     <li>Creando función para copiar mensaje</li>
@@ -74,7 +78,6 @@ Este proyecto consiste en crear una página web con HTML5, CSS3 y JavaScript con
 
 #### Proximos cambios
 
-<li>Agregar la funcionalidad en el botón de copiar</li>
 <li>Hacer que el mensaje unicamente sea en minpusculas</li>
 <li>Hacer que el mensaje no contenga simbolos especiales o letras con acentos</li>
 <li>Optimizar las funciones en JavaScript para hacerlas más simples</li>

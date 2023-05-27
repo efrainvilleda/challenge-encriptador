@@ -103,11 +103,8 @@ footer{
 
 #toast{
     visibility: hidden;
-    font-size: 1.2em;
-    font-weight: bold;
     min-width: 250px;
     background-color: yellow;
-    color: #000000;
     text-align: center;
     border-radius: 10px;
     padding: 16px;
@@ -117,6 +114,12 @@ footer{
     top: 10%;
 }
 
+.anuncio{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #000000;
+}
+
 #toast.show{
     visibility: visible;
     -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
@@ -124,23 +127,23 @@ footer{
 }
 
 @-webkit-keyframes fadein{
-    from {top: 0; opacity: 0;}
-    to {top: 10%; opacity: 1;}
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @keyframes fadein{
-    from {top: 0; opacity: 0;}
-    to {top: 10%; opacity: 1;}
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @-webkit-keyframes fadeout{
-    from {top: 10%; opacity: 1;}
-    to {top: 0; opacity: 0;}
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
 
 @keyframes fadeout{
-    from {top: 10%; opacity: 1;}
-    to {top: 0; opacity: 0;}
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
 
 .copyright{
@@ -188,22 +191,22 @@ footer{
     }
 
     @-webkit-keyframes fadein{
-        from {top: 0; opacity: 0;}
-        to {top: 14%; opacity: 1;}
+        from {opacity: 0;}
+        to {opacity: 1;}
     }
     
     @keyframes fadein{
-        from {top: 0; opacity: 0;}
-        to {top: 14%; opacity: 1;}
+        from {opacity: 0;}
+        to {opacity: 1;}
     }
     
     @-webkit-keyframes fadeout{
-        from {top: 14%; opacity: 1;}
-        to {top: 0; opacity: 0;}
+        from {opacity: 1;}
+        to {opacity: 0;}
     }
     
     @keyframes fadeout{
-        from {top: 14%; opacity: 1;}
-        to {top: 0; opacity: 0;}
+        from {opacity: 1;}
+        to {opacity: 0;}
     }
 }

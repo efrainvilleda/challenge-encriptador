@@ -30,6 +30,8 @@ function encriptar()
 
     document.querySelector(".mensaje").value = "";
     document.querySelector(".resultado").value = textoEncriptado;
+
+    mostrarAnuncio("MENSAJE ENCRIPTADO");
 }
 
 function desencriptar()
@@ -130,12 +132,13 @@ function desencriptar()
 
     document.querySelector(".mensaje").value = "";
     document.querySelector(".resultado").value = textoDesencriptado;
+
+    mostrarAnuncio("MENSAJE DESENCRIPTADO");
 }
 
 function copiarMensaje()
 {
     let texto = document.querySelector(".resultado");
-    let toast = document.getElementById("toast");
 
     texto.select();
     texto.setSelectionRange(0, 99999);
@@ -144,9 +147,19 @@ function copiarMensaje()
 
     texto.value = "";
 
+    mostrarAnuncio("TEXTO COPIADO");
+}
+
+function mostrarAnuncio(anuncioMostrar)
+{
+    let toast = document.getElementById("toast");
+    let anuncio = document.querySelector(".anuncio");
+
+    anuncio.innerHTML = anuncioMostrar;
     toast.className = "show";
 
     setTimeout(function(){
         toast.className = toast.className.replace("show", "");
     }, 3000);
+
 }
