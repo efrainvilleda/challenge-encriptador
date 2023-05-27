@@ -131,3 +131,8 @@ function desencriptar()
     document.querySelector(".mensaje").value = "";
     document.querySelector(".resultado").value = textoDesencriptado;
 }
+
+function copiarMensaje()
+{
+    
+}
