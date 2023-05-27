@@ -134,5 +134,12 @@ function desencriptar()
 
 function copiarMensaje()
 {
-    
+    let texto = document.querySelector(".resultado");
+
+    texto.select();
+    texto.setSelectionRange(0, 99999);
+
+    navigator.clipboard.writeText(texto.value);
+
+    texto.value = "";
 }
