@@ -50,6 +50,10 @@ Este proyecto consiste en crear una página web con HTML5, CSS3 y JavaScript con
 
 <br>
 
+<li>v3.2</li>
+<ul>
+    <li>Cambiando las funciones de encriptar y desencriptar usando replaceAll y includes</li> 
+</ul>
 <li>v3.1</li>
 <ul>
     <li>Modificando el toast para que aparezca con distintos avisos</li> 
