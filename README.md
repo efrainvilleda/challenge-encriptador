@@ -50,6 +50,11 @@ Este proyecto consiste en crear una página web con HTML5, CSS3 y JavaScript con
 
 <br>
 
+<li>v3.0</li>
+<ul>
+    <li>Creando función para copiar mensaje</li>
+    <li>Agregando un toast animado para indicar que se copió el mensaje</li> 
+</ul>
 <li>v2.0</li>
 <ul>
     <li>Creando diseño responsive para dispositivos moviles</li> 
