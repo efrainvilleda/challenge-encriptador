@@ -1,14 +1,7 @@
-function encriptar()
+function encriptarMensaje()
 {
-    let llaveEncriptacion = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
-
     let mensajeOriginal = document.querySelector(".mensaje");
-
-    let textoEncriptado = mensajeOriginal.value;
-
-    for(let indice = 0; indice < llaveEncriptacion.length; indice++)
-        if(textoEncriptado.includes(llaveEncriptacion[indice][0]))
-            textoEncriptado = textoEncriptado.replaceAll(llaveEncriptacion[indice][0], llaveEncriptacion[indice][1]);
+    let textoEncriptado = encriptar(mensajeOriginal.value);
 
     document.querySelector(".mensaje").value = "";
     document.querySelector(".resultado").value = textoEncriptado;
@@ -16,22 +9,46 @@ function encriptar()
     mostrarAnuncio("MENSAJE ENCRIPTADO");
 }
 
-function desencriptar()
+function desencriptarMensaje()
 {
-    let llaveEncriptacion = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
-
     let mensajeOriginal = document.querySelector(".mensaje");
-
-    let textoDesencriptado = mensajeOriginal.value;
-
-    for(let indice = 0; indice < llaveEncriptacion.length; indice++)
-        if(textoDesencriptado.includes(llaveEncriptacion[indice][1]))
-            textoDesencriptado = textoDesencriptado.replaceAll(llaveEncriptacion[indice][1], llaveEncriptacion[indice][0]);
+    let textoDesencriptado = desencriptar(mensajeOriginal.value);
 
     document.querySelector(".mensaje").value = "";
     document.querySelector(".resultado").value = textoDesencriptado;
 
     mostrarAnuncio("MENSAJE DESENCRIPTADO");
+}
+
+function validarMensaje()
+{
+    
+}
+
+function encriptar(mensajeOriginal)
+{
+    let llaveEncriptacion = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+
+    let textoEncriptado = mensajeOriginal;
+
+    for(let indice = 0; indice < llaveEncriptacion.length; indice++)
+        if(textoEncriptado.includes(llaveEncriptacion[indice][0]))
+            textoEncriptado = textoEncriptado.replaceAll(llaveEncriptacion[indice][0], llaveEncriptacion[indice][1]);
+
+    return textoEncriptado;
+}
+
+function desencriptar(mensajeOriginal)
+{
+    let llaveEncriptacion = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o", "ober"], ["u", "ufat"]];
+
+    let textoDesencriptado = mensajeOriginal;
+
+    for(let indice = 0; indice < llaveEncriptacion.length; indice++)
+        if(textoDesencriptado.includes(llaveEncriptacion[indice][1]))
+            textoDesencriptado = textoDesencriptado.replaceAll(llaveEncriptacion[indice][1], llaveEncriptacion[indice][0]);
+
+    return textoDesencriptado;
 }
 
 function copiarMensaje()
