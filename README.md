@@ -42,7 +42,7 @@ Este proyecto consiste en crear una página web con HTML5, CSS3 y JavaScript con
 
 ### Etapas del proyecto
 
-#### Proyecto en desarrollo
+#### Proyecto finalizado
 
 <br>
 
@@ -50,6 +50,10 @@ Este proyecto consiste en crear una página web con HTML5, CSS3 y JavaScript con
 
 <br>
 
+<li>v4.0 FINALIZADO</li>
+<ul>
+    <li>Agregando validación de texto para que solo acepte caracteres validos</li> 
+</ul>
 <li>v3.3</li>
 <ul>
     <li>Cambiando los enlaces de redes sociales por imagenes</li> 
@@ -82,13 +86,6 @@ Este proyecto consiste en crear una página web con HTML5, CSS3 y JavaScript con
     <li>Estructura básica del archivo html creada</li>
 </ul>
 
-<br>
-
-#### Proximos cambios
-
-<li>Hacer que el mensaje unicamente sea en minpusculas</li>
-<li>Hacer que el mensaje no contenga simbolos especiales o letras con acentos</li>
-<li>Optimizar las funciones en JavaScript para hacerlas más simples</li>
 
 <br>
 
