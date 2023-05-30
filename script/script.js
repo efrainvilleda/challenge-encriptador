@@ -1,28 +1,46 @@
 function encriptarMensaje()
 {
     let mensajeOriginal = document.querySelector(".mensaje");
-    let textoEncriptado = encriptar(mensajeOriginal.value.toLowerCase());
 
-    document.querySelector(".mensaje").value = "";
-    document.querySelector(".resultado").value = textoEncriptado;
+    if(validarMensaje(mensajeOriginal.value.toLowerCase()))
+    {
+        let textoEncriptado = encriptar(mensajeOriginal.value.toLowerCase());
 
-    mostrarAnuncio("MENSAJE ENCRIPTADO");
+        document.querySelector(".mensaje").value = "";
+        document.querySelector(".resultado").value = textoEncriptado;
+
+        mostrarAnuncio("MENSAJE ENCRIPTADO");
+    }
+    else
+    {
+        mostrarAnuncio("MENSAJE NO VÁLIDO");
+    }
 }
 
 function desencriptarMensaje()
 {
     let mensajeOriginal = document.querySelector(".mensaje");
-    let textoDesencriptado = desencriptar(mensajeOriginal.value.toLowerCase());
 
-    document.querySelector(".mensaje").value = "";
-    document.querySelector(".resultado").value = textoDesencriptado;
+    if(validarMensaje(mensajeOriginal.value.toLowerCase()))
+    {
+        let textoDesencriptado = desencriptar(mensajeOriginal.value.toLowerCase());
 
-    mostrarAnuncio("MENSAJE DESENCRIPTADO");
+        document.querySelector(".mensaje").value = "";
+        document.querySelector(".resultado").value = textoDesencriptado;
+
+        mostrarAnuncio("MENSAJE DESENCRIPTADO");
+    }
+    else
+    {
+        mostrarAnuncio("MENSAJE NO VÁLIDO");
+    }
 }
 
-function validarMensaje()
+function validarMensaje(mensajeOriginal)
 {
-    
+    let regex = /^[a-z .]+$/;
+
+    return regex.test(mensajeOriginal);
 }
 
 function encriptar(mensajeOriginal)
