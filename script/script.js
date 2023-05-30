@@ -1,7 +1,7 @@
 function encriptarMensaje()
 {
     let mensajeOriginal = document.querySelector(".mensaje");
-    let textoEncriptado = encriptar(mensajeOriginal.value);
+    let textoEncriptado = encriptar(mensajeOriginal.value.toLowerCase());
 
     document.querySelector(".mensaje").value = "";
     document.querySelector(".resultado").value = textoEncriptado;
@@ -12,7 +12,7 @@ function encriptarMensaje()
 function desencriptarMensaje()
 {
     let mensajeOriginal = document.querySelector(".mensaje");
-    let textoDesencriptado = desencriptar(mensajeOriginal.value);
+    let textoDesencriptado = desencriptar(mensajeOriginal.value.toLowerCase());
 
     document.querySelector(".mensaje").value = "";
     document.querySelector(".resultado").value = textoDesencriptado;
